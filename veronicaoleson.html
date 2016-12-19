@@ -4,15 +4,16 @@
     <style>
         body{
             margin: 0;
+            padding: 0;
         }
         header{
-            height: 10vh;
+            height: 15vh;
             background-color: ghostwhite;   
             padding-top: 4vh;
         }
             nav {
             display:inline-block;
-            line-height: 18vh;
+            line-height: 15vh;
             margin-left: 8vw;
             vertical-align: middle;
             position: absolute;
@@ -23,28 +24,52 @@
         nav a{
             font-family: 'Raleway', sans-serif;
             color: #33ffcc;
-            font-size: 3.2vh;
+            font-size: 4.2vh;
             font-weight: 700;
             padding-left: 1vw;
             padding-right: 1vw;
             vertical-align: middle;
             text-decoration: none;
-            line-height: 15vh;
+            line-height: 18vh;
             height: 15vh;
             display: inline-block;
-            vertical-align: top;
+          
         }
          #logo{
-            height: 10vh;
+            height: 12vh;
             vertical-align: middle;
+            padding-left: 1vw;
+          
             
        
         }
+         p{
+            font-family: 'Raleway', sans-serif;
+            color: gray;
+            font-size: 3.5vh;
+            margin-left: 20vh;
+            margin-right: 20vh;
+        }
+         h1{
+            font-family: 'Raleway', sans-serif;
+            color: #33ffcc;
+            font-size: 6.3vh;
+            font-weight: 700; 
+            text-align: center;
+        }
+        #thankYou
+            font-family: 'Raleway', sans-serif;
+            color: gray;
+            font-size: 4.5vh;
+            margin-left: 20vh;
+            margin-right: 20vh;
+        
     
             footer {
             height: 30vh;
             width: 100%;
-            background-color: white;
+            background-color: ghostwhite;
+            margin: 0;
         }
         
         .social {
@@ -100,13 +125,18 @@
             transform:translate(-50%,-50%);
             
         }
-        .contactBlock {
+        .contact {
             width: 100%;
-            height: 20vh;
-            background-color: white;
+            height: 10vh;
+            background-color: background-color: ghostwhite;
             text-align: center;
             margin-top: 5vh;
-            margin-bottom: 10vh;
+            margin-bottom: 5vh;
+        }
+        .contactText {
+            font-family: 'Raleway', sans-serif;
+            color: gray;
+            font-size: 3.3vh;
         }
       
      
@@ -120,10 +150,10 @@
     <header>
          <img id="logo" src="images/vo_logo3.png">
             <nav>
-                 <a href="#" class="Intro">Intro</a>
-                 <a href="#" class="About">About</a>
-                 <a href="#" class="Portfolio">Portfolio</a>
-                 <a href="#" class="Contact">Contact</a>
+                 <a href="#" class="#intro">Intro</a>
+                 <a href="#" class="#about">About</a>
+                 <a href="#" class="#portfolio">Portfolio</a>
+                 <a href="#" class="#contact">Contact</a>
             </nav>
     </header>
     <body>
@@ -134,9 +164,8 @@
                                 <div class="col-lg-12">
                                 <h1>Veronica Oleson</h1>
                                 <a class="btn btn-default page-scroll" href="#about">About Me</a>
-                                <p>Hello friend, I'm Veronica Oleson a lover of people, traveling, learning new skills and Omaha.</p> 
-                                <p>I'm on a mission to make a positive impact in the Omaha community.</p>
-                                <p>Thank you for visiting!</p>
+                                <p>Hello friend, I'm <b>Veronica Oleson</b> a lover of people, traveling, learning new skills and technology.  I'm on a mission to make a positive impact in the Omaha community.</p>
+                                <p id="thankYou"><i>Thank you for visiting!</i></p>
                                 </div>
                             </div>
                         </div>
@@ -147,11 +176,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                <h1>The Tale of Veronica Oleson</h1>
-                                <p>Born and raised in Omaha, NE and attended Northwest Highschool. I went to culinary school at Metro Community College and graduated with an Associates in Science.  In August of this year I proudly graduated from the University of Nebraska at Omaha. I obtained a Bachelors in Business Administration with a Concentration in Management.  Majority of my classes were in entreprenuership and I love the start-up scene we have in Omaha.</p>
-                                <p>I've visited a dozen different countries over the last few years and inspire others to get out and travel.  Traveling builds your soul and helps you grow and be so thankful for everything that we are blessed with here in the Silicon Prarie.</p>
-                                <p>I will be a graduate of Interface Web School, where I learned the skills and ability to create this website. I tell people to never stop learning and keep growing; I improve and grow my skills every single day.</p>
-                                <p>Gallup Entreprenuership Strengths:  Knowledge  Disruptor Risk  Relationship. Gallup style is Relational. </p>
+                                    <h1><b>My Story</b></h1>
+                                <p>I was born and raised in Omaha, NE and graduated from Northwest Highschool. I attended culinary school at Metropolitan Community College and graduated with an Associates of Science.  In August of 2016, I proudly graduated from the University of Nebraska at Omaha. I obtained a Bachelors Degree in Business Administration with a Concentration in Management. The majority of my classes were in entreprenuership and I love the start-up scene we have in Omaha.</p>
+                                <p>I've visited a dozen different countries over the last few years and inspire others to get out and travel. </p>
+                                <p>I'm a graduate of Interface Web School, where I learned skills and ability to create this website. I tell people to never stop learning and keep growing; I improve and grow my skills every single day.</p>
+                                <p>Gallup Entreprenuership Strengths are as follows:  Knowledge/Disruptor/Risk/Relationship. My Gallup Entreprenuership Style is Relational. </p>
                                     
                                 </div>
                             </div>
@@ -170,18 +199,7 @@
                         </div>
                     </section>
         </div>
-        <div>
-               <section id="contact" class="contact-section">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                <h1>Contact Section</h1>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-        </div>
+
     </body>
     <footer>
         <div class="social">
@@ -193,8 +211,8 @@
           
             <a href="mailto:veronicapoleson@gmail.com"><div class="socialBox"><span class="fa fa-envelope-o fa-2x" aria-hidden="true"></span></div></a>
         </div>
-        <div class="contactBlock">
-            <span class="sectionHeadFooter"><b>Veronica Oleson</b></span><br />
+        <div class="contact">
+            <span class="contactText">Veronica Oleson</span><br />
             <span class="contactText">P.O. Box 173</span><br />
             <span class="contactText">Kennard, NE 68034</span>
             <br />

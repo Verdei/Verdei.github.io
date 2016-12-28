@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+        <link rel="stylesheet" href="font.css" media="none" onload="if(media!='all')media='all'">
+        
+       
     <style>
         body{
             margin: 0;
             padding: 0;
+           
         }
         header{
             height: 15vh;
-            background-color: ghostwhite;   
+            background-color: white;   
             padding-top: 4vh;
         }
             nav {
@@ -35,14 +42,79 @@
             display: inline-block;
           
         }
+                .slid{
+            width: 100%;
+        }
+
+        .callBox{
+            background-color: rgba(26, 95, 162, .7);
+            margin-top: 20vh;
+            text-align: center;
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+            display: inline-block;
+            padding: 10px;
+
+
+            }
+        .callAction{
+            color: white;
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 9vh;
+            margin: 0;
+        }
+
+        .slideLink{
+            color: white;
+            text-align: center;
+            line-height: 7vh;
+            font-size: 2.5vh;
+        }
+        .slideLink:hover{
+            color: #5aa2da;
+        }
          #logo{
             height: 12vh;
             vertical-align: middle;
             padding-left: 1vw;
-          
-            
-       
+         
         }
+        #myButton{
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.75vw;
+            border-radius: 20px;
+            color: gray;
+      
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 10vw;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          }
+          .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
          p{
             font-family: 'Raleway', sans-serif;
             color: gray;
@@ -53,18 +125,41 @@
          h1{
             font-family: 'Raleway', sans-serif;
             color: #33ffcc;
-            font-size: 6.3vh;
+            font-size: 10vh;
             font-weight: 700; 
             text-align: center;
+            margin-top: 0;
         }
-        #thankYou
+           h2{
+            font-family: 'Raleway', sans-serif;
+            color: #33ffcc;
+            font-size: 7vh;
+            font-weight: 700; 
+            text-align: center;
+            margin-top: 0;
+       
+        }
+        
+        #thankYou{
             font-family: 'Raleway', sans-serif;
             color: gray;
             font-size: 4.5vh;
-            margin-left: 20vh;
-            margin-right: 20vh;
-        
-    
+            text-align: center;
+        }
+                
+       .background{
+              
+                height: 130vh;
+                background-image: url(https://static.pexels.com/photos/34020/pexels-photo.jpg);
+                background-size: cover;
+            }
+        #portPic{
+                height: 130vh;
+                background-image: url(https://static.pexels.com/photos/6347/coffee-cup-working-happy.jpg);
+                background-size: cover;
+            
+        }
+          
             footer {
             height: 30vh;
             width: 100%;
@@ -148,7 +243,7 @@
     <link rel="stylesheet" type="text/css" />
     </head> 
     <header>
-         <img id="logo" src="images/vo_logo3.png">
+         <img id="logo" src="VPImages/vo_logo3.png">
             <nav>
                  <a href="#" class="#intro">Intro</a>
                  <a href="#" class="#about">About</a>
@@ -157,51 +252,123 @@
             </nav>
     </header>
     <body>
+          <!--  <div id="carousel">
+            <div class="slides-container">
+                <div class="slid">
+                    <img class="slideImg" src="VPImages/window.jpeg" />
+                    <div class="callBox">
+                        <h1 class="callAction">GET STARTED TODAY</h1>
+                    </div>
+        
+                </div>
+                <div class="slid">
+                    <img class="slideImg" src="VPImages/backpack.jpeg">
+                    <div class="callBox">
+                        <h1 class="callAction">GO TRAVEL</h1>
+                    </div>
+                 
+                </div>
+                
+                <div class="slid">
+                    <img class="slideImg" src="VPImages/cinqueterre.jpg" />
+                    <div class="callBox">
+                        <h1 class="callAction">PLACES I'VE BEEN</h1>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="slides-navigation">
+                <a href="#" class="next">
+                    <i class="icon-chevron-right"></i>
+                </a>
+                <a href="#" class="prev">
+                    <i class="icon-chevron-left"></i>
+                </a>
+            </div>    
+            </div>-->
             <div>
                <section id="intro" class="intro-section">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                <h1>Veronica Oleson</h1>
-                                <a class="btn btn-default page-scroll" href="#about">About Me</a>
+                            <div class="layer background"><h1>Veronica Oleson</h1><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                       <h2>Under construction<br/>Currently updating</h2>
+                                
+                                    <div id="myModal" class="modal"> <button id="myBtn">About Me</button>   
+                                          <div class="modal-content">
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                <!--<a class="btn btn-default page-scroll" href="#aboutMe"></a>
+                                <button a class="btn btn-default page-scroll" href="#aboutMe" id="myButton">About me</button>-->
                                 <p>Hello friend, I'm <b>Veronica Oleson</b> a lover of people, traveling, learning new skills and technology.  I'm on a mission to make a positive impact in the Omaha community.</p>
                                 <p id="thankYou"><i>Thank you for visiting!</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-        </div>
+                   </div>
+                      
+               </section>
+             </div>
+        
             <div>
                <section id="about" class="about-section">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h1><b>My Story</b></h1>
-                                <p>I was born and raised in Omaha, NE and graduated from Northwest Highschool. I attended culinary school at Metropolitan Community College and graduated with an Associates of Science.  In August of 2016, I proudly graduated from the University of Nebraska at Omaha. I obtained a Bachelors Degree in Business Administration with a Concentration in Management. The majority of my classes were in entreprenuership and I love the start-up scene we have in Omaha.</p>
-                                <p>I've visited a dozen different countries over the last few years and inspire others to get out and travel. </p>
+                                <p>I was born and raised in Omaha, NE and come from a family of twelve kids; I fall fifth from the top of the order.  I graduated from Northwest High School. I attended Culinary Arts School at Metropolitan Community College and graduated with an Associate of Applied Science. In August of 2016, I proudly graduated from the University of Nebraska at Omaha. I obtained a Bachelors Degree in Business Administration with a Concentration in Management. The majority of my classes were in entrepreneurship and I love the start-up scene we have in Omaha.</p>
+                                <p>I worked on a cruise ship in Hawaii for six months and gained an urge to travel.  I learned so much and the experience helped me grow.  I've visited a dozen different countries over the last few years and inspire others to get out and travel. Countries I've visited: Ireland, England, Germany, France, Italy, Spain, Vatican, Isreal, Belize, Mexico, Hungary and Honduras </p>
                                 <p>I'm a graduate of Interface Web School, where I learned skills and ability to create this website. I tell people to never stop learning and keep growing; I improve and grow my skills every single day.</p>
-                                <p>Gallup Entreprenuership Strengths are as follows:  Knowledge/Disruptor/Risk/Relationship. My Gallup Entreprenuership Style is Relational. </p>
+                                <p>Gallup Entrepreneurship Strengths are as follows:  Knowledge/Disruptor/Risk/Relationship. My Gallup Entrepreneurship Style is Relational. </p>
                                     
                                 </div>
                             </div>
                         </div>
                     </section>
         </div>
-        <div>
+        
                <section id="potfolio" class="portfolio-section">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
-                                <h1>Portfolio</h1>
-                                    
+                                <div id="portPic">
+                                
                                 </div>
+                                <h1>Portfolio</h1>
+                                <h2>Under construction! Come back soon for updates!</h2>
+                            
+                            
                             </div>
                         </div>
-                    </section>
-        </div>
+                </section>
+            <script>
 
-    </body>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function() {
+                    modal.style.display = "block";
+    
+                }
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+                   <!--This is a white page the hides page until everything is loaded on the page-->
+        <div id="cover"></div> 
+        
+<!--        Link to Jquery-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="js/jquery.superslides.js"></script>
+        <script src="veronicaoleson.js"></script>
+        </body>
+   
+    
     <footer>
+    
         <div class="social">
             <a href="https://www.facebook.com/veronica.erdei.1" target="_blank"><div class="socialBox"><span class="fa fa-facebook fa-2x"></span></div></a>
             
